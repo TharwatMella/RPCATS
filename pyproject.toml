@@ -1,0 +1,21 @@
+[project]
+name = "rpcats"
+version = "0.1.0"
+description = "I am cats API"
+readme = "README.md"
+
+authors = [
+    { name = "tharwatmella", email = "tharwat-mella@hotmail.com" }
+]
+
+requires-python = ">=3.14"
+dependencies = [
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+rpcats = "rpcats:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
